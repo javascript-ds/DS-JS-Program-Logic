@@ -1,0 +1,7 @@
+// short object by id or name
+
+var data = [{ "id": "111", "name": "FIAT", "active": true, "parentId": "1" }, { "id": "106", "name": "AUDI", "active": true, "parentId": "1" }, { "id": "107", "name": "BMW", "active": true, "parentId": "1" }, { "id": "109", "name": "RENAULT", "active": true, "parentId": "1" }];
+data.sort(function (a, b) {
+    return a.name.localeCompare(b.name);
+});
+console.log('<pre>' + JSON.stringify(data, 0, 4) + '</pre>');
